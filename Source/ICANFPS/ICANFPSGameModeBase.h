@@ -9,9 +9,14 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable, BlueprintType)
 class ICANFPS_API AICANFPSGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+	UFUNCTION(BlueprintCallable)
+	void SetGravityZ(float NewValue);
+
+	UFUNCTION(BlueprintCallable)
+	UWorld* GetWorldObject();
 };
