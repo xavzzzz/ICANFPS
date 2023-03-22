@@ -2,6 +2,7 @@
 
 
 #include "ICANFPSGameModeBase.h"
+#include "GameFramework/WorldSettings.h"
 
 void AICANFPSGameModeBase::SetGravityZ(float NewValue)
 {
